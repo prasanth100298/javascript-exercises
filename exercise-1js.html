@@ -1,0 +1,70 @@
+<html>
+<body>
+ <p id="demo1"></p>
+ <p id="demo2a"></p>
+ <p id="demo2b"></p>
+ <p id="demo2c"></p>
+ <p id="demo2d"></p>
+ <button onclick="myFunction()">Try it</button>
+ <p id="demo4"></p>
+ <p id="demo5"></p>
+ <p id="demo6"></p>
+  <script>
+  function square (x){
+  return x*x
+  }
+  document.getElementById("demo1").innerHTML = square(5)
+
+  function addNum(num1,num2) {
+  return num1+num2 ;
+  }
+  document.getElementById("demo2a").innerHTML =
+  "The addition of the two numbers is"+" "+ addNum(4,7);
+
+  function multiNum(num1,num2) {
+  return num1*num2 ;
+  }
+  document.getElementById("demo2b").innerHTML =
+  "The multiplication of the two numbers is"+" "+ multiNum(6,5);
+
+  function subtractNum(num1,num2) {
+  return num1-num2 ;
+  }
+  document.getElementById("demo2c").innerHTML =
+  "The subtraction of the two numbers is"+" "+ subtractNum(5,1);
+
+  function divideNum(num1,num2) {
+  return num1/num2 ;
+  }
+  document.getElementById("demo2d").innerHTML =
+  "The division of the two numbers is"+" "+ divideNum(14,2);
+
+  function myFunction() {
+    alert("Hello World");
+  }
+
+  function volume(a,b,c){
+  return a*b*c;
+  }
+  document.getElementById("demo4").innerHTML = volume(4,2,5);
+
+
+  var person = {
+  firstName : "Nimal", lastName : "Raj",
+  age : "15", city : "Kandy"
+  };
+  document.getElementById("demo5").innerHTML =
+  "My name is"+" "+ person.firstName +" "+ person.lastName+"."+
+  "I'm"+" "+person.age+" "+"years"+" "+"old."+"I live in"+" "+person.city+".";
+
+  var course = {
+  courseName : "BIT",courseFree : "Rs 150 000",
+  StartDate : "12.06.2018",center :"Our Office"
+  };
+  document.getElementById("demo6").innerHTML =
+  "Course Name:"+" "+course.courseName+"<br>"+"<br>"+"Course Free:"+
+  " "+course.courseFree+"<br>"+"<br>"+"Start Date:"+course.StartDate+
+  "<br>"+"<br>"+"Center:"+" "+course.center;
+</script>
+</body>
+</html>
